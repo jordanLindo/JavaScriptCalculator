@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/Calc_Style.css">
+    <script type="text/javascript" src="JS/calc.js"></script>
+    
+    
+</head>
+<body>
+    <h1>My Calculator</h1>
+    <div id="calc_body">
+    <input type="text" name="screen" id="screen" class="screen" onKeyPress ="return false" disabled>
+        <br>
+        <div class="row">
+            <button name="btn1" class="calc_button" value="" onclick="theNum(1)" id="1">1</button>
+            <button name="btn2" class="calc_button" value="" onclick="theNum(2)" id="2">2</button>
+            <button name="btn3" class="calc_button" value="" onclick="theNum(3)" id="3">3</button>
+            <button name="btnPlus" class="calc_button" value="" onclick="theFunc('+')" id="+">+</button>
+        </div>
+        <div class="row">
+            <button name="btn4" class="calc_button" value="" onclick="theNum(4)" id="4">4</button>
+            <button name="btn5" class="calc_button" value="" onclick="theNum(5)" id="5">5</button>
+            <button name="btn6" class="calc_button" value="" onclick="theNum(6)" id="6">6</button>
+            <button name="btnMinus" class="calc_button" value="" onclick="theFunc('-')" id="-">-</button>
+        </div>
+        <div class="row">
+            <button name="btn7" class="calc_button" value="" onclick="theNum(7)" id="7">7</button>
+            <button name="btn8" class="calc_button" value="" onclick="theNum(8)" id="8">8</button>
+            <button name="btn9" class="calc_button" value="" onclick="theNum(9)" id="9">9</button>
+            <button name="btnMulti" class="calc_button" value="" onclick="theFunc('x')" id="">x</button>
+        </div>
+        <div class="row">
+            <button name="btn0" class="calc_button" value="" onclick="theNum(0)" id="0">0</button>
+            <button name="btnDecimal" class="calc_button" value="" onclick="theDot()"  id="">.</button>
+            <button name="btnClear" class="calc_button" value="" onclick="clearScreen()" id="c">c</button>
+            <button name="btnDiv" class="calc_button" value="" onclick="theFunc('/')" id="">&#247</button>
+        </div>
+        <div class="row">
+            <button name="btnReturn" class="calc_button2" value="" onclick="theReturn()" id="">=</button>
+        </div>
+        <br><br>
+        <div id="clock" class="clock"><script>
+            
+            theClock();
+            
+            </script></div>
+        
+    </div>
+    
+</body>
+</html>
